@@ -17,16 +17,18 @@ class RouteModel : public Model {
         Node(int idx, RouteModel * search_model, Model::Node node) : Model::Node(node), parent_model(search_model), index(idx) {}
       
       private:
-        // Add private Node variables and methods here.
         int index;
         RouteModel * parent_model = nullptr;
     };
     
     // Add public RouteModel variables and methods here.
-    RouteModel(const std::vector<std::byte> &xml);  
+    RouteModel(const std::vector<std::byte> &xml);
+    //Getter for the private nodes vector
+    std::vector<Node> &SNodes() { return m_Nodes; }  
     std::vector<Node> path; // This variable will eventually store the path that is found by the A* search.
 
   private:
-    // Add private RouteModel variables and methods here.
+    //The RouteModel Class 
+    std::vector<Node> m_Nodes;
 
 };
