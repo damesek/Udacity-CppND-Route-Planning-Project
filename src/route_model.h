@@ -14,7 +14,7 @@ class RouteModel : public Model {
         // The Node Class 5.7 
         // prev Node
         RouteModel::Node* parent = nullptr;
-        // distance
+        // distance and cost
         float h_value = std::numeric_limits<float>::max();
         float g_value = 0.f;
         // already visited
@@ -22,7 +22,11 @@ class RouteModel : public Model {
         // neighbors nodes
         std::vector<RouteModel::Node *> neighbors;
 
-        
+        // distance declaration for the RouteModel:Node class
+        float distance(const Model::Node &other) const {
+          return std::sqrt(std::pow(this->x - other.x, 2.f) + std::pow(this->y - other.y, 2.f));
+        }
+
         Node(){}
         Node(int idx, RouteModel * search_model, Model::Node node) : Model::Node(node), parent_model(search_model), index(idx) {}
       

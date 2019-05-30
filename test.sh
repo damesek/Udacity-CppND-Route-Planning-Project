@@ -6,9 +6,9 @@ rm -rf ./build && mkdir build && cd build
 # choose the right test
 #cmake ..
 #cmake .. "-DTESTING=RouteModel" 
-cmake .. "-DTESTING=RMNodeClass" 
+#cmake .. "-DTESTING=RMNodeClass" 
 #cmake .. "-DTESTING=RMSNodes" 
-#cmake .. "-DTESTING=NodeDist" 
+cmake .. "-DTESTING=NodeDist" 
 #cmake .. "-DTESTING=NodeToRoad" 
 #cmake .. "-DTESTING=FindNeighbors" 
 #cmake .. "-DTESTING=FindClosest" 
