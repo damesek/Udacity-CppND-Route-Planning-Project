@@ -32,21 +32,14 @@ void RoutePlanner::AStarSearch()
     return;
 }
 
- //stolen from dbecad
 
-bool CompareF(const RouteModel::Node *a, RouteModel::Node *b) 
-{
-  return a->g_value + a->h_value > b->g_value + b->h_value ; 
-}
+RouteModel::Node * RoutePlanner::NextNode() {
+    std::sort(open_list.begin(), open_list.end(), [](const auto &_1st, const auto &_2nd) {
+        return _1st->h_value + _1st->g_value < _2nd->h_value + _2nd->g_value;
+    });
 
-RouteModel::Node * RoutePlanner::NextNode()
-{
-    //sort the vector of Nodes
-    std::sort(open_list.begin(), open_list.end(), CompareF);
-
-    //Get smallest F value node, and pop-it from list
-    RouteModel::Node *result = open_list.back();
-    open_list.pop_back();
+    RouteModel::Node *result = open_list.front();
+    open_list.erase(open_list.begin());
     return result;
 }
 
