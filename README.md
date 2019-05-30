@@ -1,3 +1,5 @@
+Check https://github.com/dbecad/CppND-Route-Planning-Project/blob/master/Ubuntu16.4_Install.md repo about how to install on Ubuntu 16.04, quite same on Ubuntu 18.04 (at my case).
+
 # Route Planning Project Starter Code
 
 This is the starter code for the Route Planning project. Instructions for each exercise can be found in the `instructions` directory, and unit tests for some exercises in the `test` directory.
