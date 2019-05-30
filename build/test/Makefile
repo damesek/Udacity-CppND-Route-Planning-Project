@@ -171,32 +171,32 @@ test/fast:
 	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-utest_rm_node_dist.o: utest_rm_node_dist.cpp.o
+utest_rm_hashmap.o: utest_rm_hashmap.cpp.o
 
-.PHONY : utest_rm_node_dist.o
+.PHONY : utest_rm_hashmap.o
 
 # target to build an object file
-utest_rm_node_dist.cpp.o:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_node_dist.cpp.o
-.PHONY : utest_rm_node_dist.cpp.o
+utest_rm_hashmap.cpp.o:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_hashmap.cpp.o
+.PHONY : utest_rm_hashmap.cpp.o
 
-utest_rm_node_dist.i: utest_rm_node_dist.cpp.i
+utest_rm_hashmap.i: utest_rm_hashmap.cpp.i
 
-.PHONY : utest_rm_node_dist.i
+.PHONY : utest_rm_hashmap.i
 
 # target to preprocess a source file
-utest_rm_node_dist.cpp.i:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_node_dist.cpp.i
-.PHONY : utest_rm_node_dist.cpp.i
+utest_rm_hashmap.cpp.i:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_hashmap.cpp.i
+.PHONY : utest_rm_hashmap.cpp.i
 
-utest_rm_node_dist.s: utest_rm_node_dist.cpp.s
+utest_rm_hashmap.s: utest_rm_hashmap.cpp.s
 
-.PHONY : utest_rm_node_dist.s
+.PHONY : utest_rm_hashmap.s
 
 # target to generate assembly for a file
-utest_rm_node_dist.cpp.s:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_node_dist.cpp.s
-.PHONY : utest_rm_node_dist.cpp.s
+utest_rm_hashmap.cpp.s:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_hashmap.cpp.s
+.PHONY : utest_rm_hashmap.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... utest_rm_node_dist.o"
-	@echo "... utest_rm_node_dist.i"
-	@echo "... utest_rm_node_dist.s"
+	@echo "... utest_rm_hashmap.o"
+	@echo "... utest_rm_hashmap.i"
+	@echo "... utest_rm_hashmap.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/utest_rm_node_dist.cpp.o"
+  "CMakeFiles/test.dir/utest_rm_hashmap.cpp.o"
   "../../bin/test.pdb"
   "../../bin/test"
 )
