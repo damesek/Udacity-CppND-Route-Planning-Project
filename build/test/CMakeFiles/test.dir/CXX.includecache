@@ -330,7 +330,7 @@ string
 route_model.h
 /home/sb/Downloads/CppND-Route-Planning-Project/src/route_model.h
 
-/home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rp_a_star_stub.cpp
+/home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rp_a_star_search.cpp
 gtest/gtest.h
 /home/sb/Downloads/CppND-Route-Planning-Project/test/gtest/gtest.h
 fstream

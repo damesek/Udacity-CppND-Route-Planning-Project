@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/utest_rp_a_star_stub.cpp.o"
+  "CMakeFiles/test.dir/utest_rp_a_star_search.cpp.o"
   "../../bin/test.pdb"
   "../../bin/test"
 )

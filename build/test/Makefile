@@ -171,32 +171,32 @@ test/fast:
 	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-utest_rp_a_star_stub.o: utest_rp_a_star_stub.cpp.o
+utest_rp_a_star_search.o: utest_rp_a_star_search.cpp.o
 
-.PHONY : utest_rp_a_star_stub.o
+.PHONY : utest_rp_a_star_search.o
 
 # target to build an object file
-utest_rp_a_star_stub.cpp.o:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rp_a_star_stub.cpp.o
-.PHONY : utest_rp_a_star_stub.cpp.o
+utest_rp_a_star_search.cpp.o:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rp_a_star_search.cpp.o
+.PHONY : utest_rp_a_star_search.cpp.o
 
-utest_rp_a_star_stub.i: utest_rp_a_star_stub.cpp.i
+utest_rp_a_star_search.i: utest_rp_a_star_search.cpp.i
 
-.PHONY : utest_rp_a_star_stub.i
+.PHONY : utest_rp_a_star_search.i
 
 # target to preprocess a source file
-utest_rp_a_star_stub.cpp.i:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rp_a_star_stub.cpp.i
-.PHONY : utest_rp_a_star_stub.cpp.i
+utest_rp_a_star_search.cpp.i:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rp_a_star_search.cpp.i
+.PHONY : utest_rp_a_star_search.cpp.i
 
-utest_rp_a_star_stub.s: utest_rp_a_star_stub.cpp.s
+utest_rp_a_star_search.s: utest_rp_a_star_search.cpp.s
 
-.PHONY : utest_rp_a_star_stub.s
+.PHONY : utest_rp_a_star_search.s
 
 # target to generate assembly for a file
-utest_rp_a_star_stub.cpp.s:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rp_a_star_stub.cpp.s
-.PHONY : utest_rp_a_star_stub.cpp.s
+utest_rp_a_star_search.cpp.s:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rp_a_star_search.cpp.s
+.PHONY : utest_rp_a_star_search.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... utest_rp_a_star_stub.o"
-	@echo "... utest_rp_a_star_stub.i"
-	@echo "... utest_rp_a_star_stub.s"
+	@echo "... utest_rp_a_star_search.o"
+	@echo "... utest_rp_a_star_search.i"
+	@echo "... utest_rp_a_star_search.s"
 .PHONY : help
 
 
