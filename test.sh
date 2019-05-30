@@ -11,8 +11,8 @@ rm -rf ./build && mkdir build && cd build
 #cmake .. "-DTESTING=NodeDist" 
 #cmake .. "-DTESTING=NodeToRoad" 
 #cmake .. "-DTESTING=FindNeighbors" 
-cmake .. "-DTESTING=FindClosest" 
-#cmake .. "-DTESTING=AStarStub" 
+#cmake .. "-DTESTING=FindClosest" 
+cmake .. "-DTESTING=AStarStub" 
 #cmake .. "-DTESTING=AStarSearch"
 
 
