@@ -42,8 +42,10 @@ class RouteModel : public Model {
     
     // Add public RouteModel variables and methods here.
     RouteModel(const std::vector<std::byte> &xml);
+
     // Create Node to Road hashmap getter function
     auto &GetNodeToRoadMap() { return node_to_road; }
+    
     // Getter for the private nodes vector
     std::vector<RouteModel::Node> &SNodes() { return m_Nodes; }  
     std::vector<RouteModel::Node> path; 

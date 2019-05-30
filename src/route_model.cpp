@@ -10,31 +10,60 @@ RouteModel::RouteModel(const std::vector<std::byte> &xml) : Model(xml) {
   for (Model::Node node : this->Nodes()) 
     this->m_Nodes.push_back(RouteModel::Node(counter++, this, node));
 
-  CreateNodeToRoadHashmap();  
+  CreateNodeToRoadHashmap(); 
   
 }
 
 
 
+
+// FindNeighBor method > Find closest Node
+RouteModel::Node* RouteModel::Node::FindNeighbor(vector<int> node_indices){
+    RouteModel::Node* closestNode = nullptr;
+    float minDistance = std::numeric_limits<float>::max(); 
+
+    // *solution from dbecad, sounds clearer than official 
+    vector<RouteModel::Node> &nodeList = parent_model->SNodes();
+
+    for (int node_index : node_indices)
+    {
+        if (nodeList[node_index].visited == false)
+        {
+            float currDistance = distance(nodeList[node_index]);
+            if (currDistance < minDistance && currDistance != 0)
+            {
+                minDistance = currDistance;
+                closestNode = &nodeList[node_index];
+            }
+        }
+    }
+
+    return closestNode;
+}
+
+
+void RouteModel::Node::FindNeighbors() {
+    for (auto road : parent_model->node_to_road[this->index]) {
+        RouteModel::Node *new_neighbor = this->FindNeighbor(parent_model->Ways()[road->way].nodes);
+        if (new_neighbor) {
+            this->neighbors.emplace_back(new_neighbor);
+        }
+    }
+}
+
+// Create reverse map
 void RouteModel::CreateNodeToRoadHashmap(void)
 {
-    //For each roads of the model (Note: use reference to store address in map)
-    for (const Model::Road &currRoad : Roads())
-    {
-        //Build reverse map only for non-footway roads
-        if (currRoad.type != Model::Road::Type::Footway)
-        {
-            //Iterate over all nodes of current road's way
-            for (int currNodeIdx : Ways()[currRoad.way].nodes)
-            {
-                //When node index is not yet present in list create an empty vector 
-                if (node_to_road.find(currNodeIdx) == node_to_road.end())
-                    node_to_road[currNodeIdx] = vector<const Model::Road *> ();
+    for (const Model::Road &thisRoad : Roads())
+    { // just footway
+        if (thisRoad.type != Model::Road::Type::Footway){
+          for (int curr_index : Ways()[thisRoad.way].nodes){ 
+                if (node_to_road.find(curr_index) == node_to_road.end())
+                    node_to_road[curr_index] = vector<const Model::Road *> ();
 
                 //Add current Road pointer to node index entry
-                node_to_road[currNodeIdx].push_back(&currRoad);
+                node_to_road[curr_index].push_back(&thisRoad);
             }
         } 
     }
 }
-

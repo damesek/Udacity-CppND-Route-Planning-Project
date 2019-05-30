@@ -171,32 +171,32 @@ test/fast:
 	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-utest_rm_hashmap.o: utest_rm_hashmap.cpp.o
+utest_rm_find_neighbors.o: utest_rm_find_neighbors.cpp.o
 
-.PHONY : utest_rm_hashmap.o
+.PHONY : utest_rm_find_neighbors.o
 
 # target to build an object file
-utest_rm_hashmap.cpp.o:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_hashmap.cpp.o
-.PHONY : utest_rm_hashmap.cpp.o
+utest_rm_find_neighbors.cpp.o:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o
+.PHONY : utest_rm_find_neighbors.cpp.o
 
-utest_rm_hashmap.i: utest_rm_hashmap.cpp.i
+utest_rm_find_neighbors.i: utest_rm_find_neighbors.cpp.i
 
-.PHONY : utest_rm_hashmap.i
+.PHONY : utest_rm_find_neighbors.i
 
 # target to preprocess a source file
-utest_rm_hashmap.cpp.i:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_hashmap.cpp.i
-.PHONY : utest_rm_hashmap.cpp.i
+utest_rm_find_neighbors.cpp.i:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.i
+.PHONY : utest_rm_find_neighbors.cpp.i
 
-utest_rm_hashmap.s: utest_rm_hashmap.cpp.s
+utest_rm_find_neighbors.s: utest_rm_find_neighbors.cpp.s
 
-.PHONY : utest_rm_hashmap.s
+.PHONY : utest_rm_find_neighbors.s
 
 # target to generate assembly for a file
-utest_rm_hashmap.cpp.s:
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_hashmap.cpp.s
-.PHONY : utest_rm_hashmap.cpp.s
+utest_rm_find_neighbors.cpp.s:
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.s
+.PHONY : utest_rm_find_neighbors.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... utest_rm_hashmap.o"
-	@echo "... utest_rm_hashmap.i"
-	@echo "... utest_rm_hashmap.s"
+	@echo "... utest_rm_find_neighbors.o"
+	@echo "... utest_rm_find_neighbors.i"
+	@echo "... utest_rm_find_neighbors.s"
 .PHONY : help
 
 
