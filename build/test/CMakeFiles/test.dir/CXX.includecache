@@ -330,7 +330,7 @@ string
 route_model.h
 /home/sb/Downloads/CppND-Route-Planning-Project/src/route_model.h
 
-/home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_neighbors.cpp
+/home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_closest_node.cpp
 gtest/gtest.h
 /home/sb/Downloads/CppND-Route-Planning-Project/test/gtest/gtest.h
 fstream

@@ -51,6 +51,20 @@ void RouteModel::Node::FindNeighbors() {
     }
 }
 
+RouteModel::Node &RouteModel::FindClosestNode(float x, float y) {
+    Model::Node userNode {x, y}; 
+    float minDistance = std::numeric_limits<float>::max(); 
+    int minNodeIndex = std::numeric_limits<int>::max();
+    for(auto i : node_to_road) {
+        float thisDistance = SNodes()[i.first].distance(userNode);
+        if (thisDistance < minDistance) {
+            minNodeIndex = i.first;
+            minDistance = thisDistance;
+        }
+    }
+    return SNodes()[minNodeIndex];
+}
+
 // Create reverse map
 void RouteModel::CreateNodeToRoadHashmap(void)
 {

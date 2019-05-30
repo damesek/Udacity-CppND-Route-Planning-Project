@@ -57,22 +57,22 @@ include test/CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/test.dir/flags.make
 
-test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o: test/CMakeFiles/test.dir/flags.make
-test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o: ../test/utest_rm_find_neighbors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb/Downloads/CppND-Route-Planning-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o"
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o -c /home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_neighbors.cpp
+test/CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.o: test/CMakeFiles/test.dir/flags.make
+test/CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.o: ../test/utest_rm_find_closest_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sb/Downloads/CppND-Route-Planning-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.o"
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.o -c /home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_closest_node.cpp
 
-test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.i"
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_neighbors.cpp > CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.i
+test/CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.i"
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_closest_node.cpp > CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.i
 
-test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.s"
-	cd /home/sb/Downloads/CppND-Route-Planning-Project/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_neighbors.cpp -o CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.s
+test/CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.s"
+	cd /home/sb/Downloads/CppND-Route-Planning-Project/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sb/Downloads/CppND-Route-Planning-Project/test/utest_rm_find_closest_node.cpp -o CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o"
+"CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS = \
@@ -80,7 +80,7 @@ test_EXTERNAL_OBJECTS = \
 "/home/sb/Downloads/CppND-Route-Planning-Project/build/src/CMakeFiles/route_planner.dir/model.cpp.o" \
 "/home/sb/Downloads/CppND-Route-Planning-Project/build/src/CMakeFiles/route_planner.dir/route_model.cpp.o"
 
-../bin/test: test/CMakeFiles/test.dir/utest_rm_find_neighbors.cpp.o
+../bin/test: test/CMakeFiles/test.dir/utest_rm_find_closest_node.cpp.o
 ../bin/test: src/CMakeFiles/route_planner.dir/route_planner.cpp.o
 ../bin/test: src/CMakeFiles/route_planner.dir/model.cpp.o
 ../bin/test: src/CMakeFiles/route_planner.dir/route_model.cpp.o
